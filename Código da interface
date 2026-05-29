@@ -1,0 +1,171 @@
+name: Piggbank Design System
+colors:
+  surface: '#f8f9ff'
+  surface-dim: '#cbdbf5'
+  surface-bright: '#f8f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#eff4ff'
+  surface-container: '#e5eeff'
+  surface-container-high: '#dce9ff'
+  surface-container-highest: '#d3e4fe'
+  on-surface: '#0b1c30'
+  on-surface-variant: '#464652'
+  inverse-surface: '#213145'
+  inverse-on-surface: '#eaf1ff'
+  outline: '#777683'
+  outline-variant: '#c7c5d4'
+  surface-tint: '#4f54b4'
+  primary: '#15157d'
+  on-primary: '#ffffff'
+  primary-container: '#2e3192'
+  on-primary-container: '#9da1ff'
+  inverse-primary: '#c0c1ff'
+  secondary: '#006c49'
+  on-secondary: '#ffffff'
+  secondary-container: '#6cf8bb'
+  on-secondary-container: '#00714d'
+  tertiary: '#590016'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#820024'
+  on-tertiary-container: '#ff8590'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#e1e0ff'
+  primary-fixed-dim: '#c0c1ff'
+  on-primary-fixed: '#04006d'
+  on-primary-fixed-variant: '#373a9b'
+  secondary-fixed: '#6ffbbe'
+  secondary-fixed-dim: '#4edea3'
+  on-secondary-fixed: '#002113'
+  on-secondary-fixed-variant: '#005236'
+  tertiary-fixed: '#ffdadb'
+  tertiary-fixed-dim: '#ffb2b7'
+  on-tertiary-fixed: '#40000d'
+  on-tertiary-fixed-variant: '#92002a'
+  background: '#f8f9ff'
+  on-background: '#0b1c30'
+  surface-variant: '#d3e4fe'
+typography:
+  display-lg:
+    fontFamily: Inter
+    fontSize: 48px
+    fontWeight: '700'
+    lineHeight: 56px
+    letterSpacing: -0.02em
+  display-lg-mobile:
+    fontFamily: Inter
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+    letterSpacing: -0.02em
+  headline-md:
+    fontFamily: Inter
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: -0.01em
+  headline-sm:
+    fontFamily: Inter
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '500'
+    lineHeight: 20px
+  label-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.05em
+  mono-data:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '500'
+    lineHeight: 20px
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  unit: 4px
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 24px
+  xl: 32px
+  container-max: 1280px
+  gutter: 24px
+  margin-mobile: 16px
+---
+
+## Brand & Style
+The design system for the financial dashboard is built on the pillars of **Modern Professionalism** and **Operational Clarity**. It targets modern professionals and small business owners who require a high-trust environment to manage assets without the friction of legacy banking interfaces.
+
+The aesthetic follows a **Modern / Corporate** style with a focus on precision and airiness. By combining generous whitespace with high-density data visualizations, the interface evokes a sense of control and reliability. The emotional response should be one of "calm competence"—the user feels empowered by data rather than overwhelmed by it.
+
+## Colors
+This design system utilizes a structured palette to drive financial intent and hierarchy:
+
+- **Primary (Deep Indigo):** Used for navigation, primary actions, and branding. It provides the "anchor" for the professional look.
+- **Secondary (Emerald Green):** Reserved exclusively for 'Incomes', positive growth, and success states.
+- **Tertiary (Rose Red):** Reserved exclusively for 'Expenses', debt, and critical warnings.
+- **Neutral (Slate):** Used for secondary text, borders, and UI scaffolding.
+- **Background/Surface:** A "Crisp White" (`#FFFFFF`) surface sits atop a slightly tinted "Ghost White" (`#F8FAFC`) background to create subtle depth without heavy shadows.
+
+## Typography
+**Inter** is the sole typeface, chosen for its exceptional legibility in data-heavy environments. 
+
+- **Numerical Data:** For balance sheets and transaction lists, use the `mono-data` token which enables tabular numbers to ensure decimal points align vertically.
+- **Hierarchy:** Use `label-sm` in uppercase for section headers and table column titles to provide clear categorization.
+- **Contrast:** High-level totals and account balances should utilize `display-lg` with tight letter-spacing to emphasize importance.
+
+## Layout & Spacing
+The layout employs a **Fixed Grid** system for desktop (12 columns, 1280px max-width) and a **Fluid Grid** for mobile.
+
+- **Rhythm:** A 4px baseline grid governs all spacing. Vertical rhythm between dashboard cards should be consistently `lg` (24px).
+- **Desktop:** Sidebar is fixed at 260px. The main content area uses 24px gutters.
+- **Mobile:** Margins shrink to 16px. Grid collapses to a single column. Cards maintain their 12px-16px internal padding but stack vertically with 16px gaps.
+
+## Elevation & Depth
+Depth is created through **Tonal Layering** and **Ambient Shadows**. 
+
+1. **Floor:** The background (`#F8FAFC`).
+2. **Card Layer:** White surfaces (`#FFFFFF`) with a subtle 1px border (`#E2E8F0`) and a soft, diffused shadow: `0px 4px 12px rgba(0, 0, 0, 0.03)`.
+3. **Overlay Layer:** Modals and dropdowns use a more pronounced shadow: `0px 12px 32px rgba(0, 0, 0, 0.1)`. 
+4. **Scrim:** Modals are accompanied by a Dark Overlay (Indigo-tinted Black at 40% opacity) to focus user attention and push the background into the distance.
+
+## Shapes
+The design system uses a **Rounded** shape language to soften the analytical nature of financial data.
+
+- **Small Elements:** Buttons, checkboxes, and input fields use `rounded` (8px).
+- **Large Elements:** Dashboard cards, modals, and container wrappers use `rounded-lg` (12px) or `rounded-xl` (16px) depending on their size, creating a "nested corner" effect where outer containers are slightly more rounded than inner ones.
+
+## Components
+- **Buttons:** 
+  - *Primary:* Solid Deep Indigo, white text, 8px radius. 
+  - *Secondary:* Ghost white background with a 1px Slate border.
+- **Inputs & Selects:** 1px Slate-200 border, 8px radius. On focus, the border changes to Primary Indigo with a 2px soft outer glow.
+- **Chips (Status):** 
+  - *Income Status:* Light Emerald background with Dark Emerald text.
+  - *Expense Status:* Light Rose background with Dark Rose text.
+- **Modals:** Center-aligned, 16px radius, utilizing the dark indigo-tinted overlay. Headers must include a clear 'close' affordance.
+- **Cards:** The primary container for data. Always white, 12px-16px radius, with a subtle border and shadow as defined in Elevation.
+- **Data Tables:** Borderless rows with 1px Slate-100 bottom dividers. Use `tabular-nums` for all currency columns.
